@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40560C8E25D112B200C3B347 /* AudioOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 40560C8D25D112B200C3B347 /* AudioOption.m */; };
 		40C8535F25CE7DED0021C345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C8535E25CE7DED0021C345 /* AppDelegate.m */; };
 		40C8536525CE7DED0021C345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C8536425CE7DED0021C345 /* ViewController.m */; };
 		40C8536825CE7DED0021C345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C8536625CE7DED0021C345 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40560C8C25D112B200C3B347 /* AudioOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioOption.h; sourceTree = "<group>"; };
+		40560C8D25D112B200C3B347 /* AudioOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioOption.m; sourceTree = "<group>"; };
 		40C8535A25CE7DED0021C345 /* EchoEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C8535D25CE7DED0021C345 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40C8535E25CE7DED0021C345 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				40C8536425CE7DED0021C345 /* ViewController.m */,
 				40C8538425CE94840021C345 /* AudioEcho.h */,
 				40C8538525CE94840021C345 /* AudioEcho.m */,
+				40560C8C25D112B200C3B347 /* AudioOption.h */,
+				40560C8D25D112B200C3B347 /* AudioOption.m */,
 				40C8536625CE7DED0021C345 /* Main.storyboard */,
 				40C8536925CE7DEF0021C345 /* Assets.xcassets */,
 				40C8536B25CE7DEF0021C345 /* LaunchScreen.storyboard */,
@@ -146,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C8536525CE7DED0021C345 /* ViewController.m in Sources */,
+				40560C8E25D112B200C3B347 /* AudioOption.m in Sources */,
 				40C8535F25CE7DED0021C345 /* AppDelegate.m in Sources */,
 				40C8537025CE7DEF0021C345 /* main.m in Sources */,
 				40C8538625CE94840021C345 /* AudioEcho.m in Sources */,
