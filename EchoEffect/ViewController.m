@@ -27,10 +27,7 @@
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"Cell"];
-            
-    // TODO: 3. Inject Effect
-    // TODO: 4. Input Music App
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"Cell"];            
 }
 
 #pragma mark - UITableViewDataSource

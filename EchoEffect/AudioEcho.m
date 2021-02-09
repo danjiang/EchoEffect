@@ -118,10 +118,19 @@
         [self.audioEngine stop];
         self.audioEngine = nil;
     }
-    
+            
     self.audioEngine = [AVAudioEngine new];
+    
+    // AVAudioUnitDelay is subclass of AVAudioUnitEffect.
+    // There is no way to write a custom subclass of AVAudioUnitEffect.
+    AVAudioUnitDelay *delay = [AVAudioUnitDelay new];
+    delay.delayTime = 2.0;
+    
+    [self.audioEngine attachNode:delay];
+    
     [self.audioEngine connect:self.audioEngine.inputNode to:self.audioEngine.mainMixerNode format:nil];
-    [self.audioEngine connect:self.audioEngine.mainMixerNode to:self.audioEngine.outputNode format:nil];
+    [self.audioEngine connect:self.audioEngine.mainMixerNode to:delay format:nil];
+    [self.audioEngine connect:delay to:self.audioEngine.outputNode format:nil];
 }
 
 - (void)startSession {
